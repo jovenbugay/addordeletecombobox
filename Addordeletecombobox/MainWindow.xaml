@@ -1,0 +1,90 @@
+﻿<Window x:Class="Addordeletecombobox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Addordeletecombobox"
+        mc:Ignorable="d"
+        Title="Addordeletecombobox 3" Height="372.549" Width="722.059">
+    <StackPanel>
+        <ComboBox x:Name="ComboBox1" Width="200" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0">
+            <ComboBoxItem Foreground="Black" Background="Aqua" IsSelected="True" FontFamily="Showcard Gothic">
+                <StackPanel Name="Mamamo" Orientation="Horizontal">
+                    <StackPanel Width="41">
+                        <Image Source="Resource/Coffee.png" Height="30"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="Coffee"/>
+                    </StackPanel>
+                </StackPanel>
+            </ComboBoxItem>   
+
+
+            <ComboBoxItem Background="Green"  IsSelected="True" FontFamily="Showcard Gothic">
+                <StackPanel Name="tea" Orientation="Horizontal">
+                    <StackPanel Width="41">
+                        <Image Source="Resource/Coffee.png" Height="30"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="Tea"/>
+                    </StackPanel>
+                </StackPanel>
+            </ComboBoxItem>  
+            
+             
+            <ComboBoxItem Background="Yellow"  IsSelected="True" FontFamily="Showcard Gothic">
+                <StackPanel Name="Orange" Orientation="Horizontal">
+                    <StackPanel Width="41">
+                        <Image Source="Resource/Coffee.png" Height="30"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="OrangeJuice" Margin="0,0,-78,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </ComboBoxItem>   
+
+
+            <ComboBoxItem Background="Orange"  IsSelected="True" FontFamily="Showcard Gothic">
+                <StackPanel Name="Milk" Orientation="Horizontal">
+                    <StackPanel Width="41">
+                        <Image Source="Resource/Coffee.png" Height="30"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="Milk"/>
+                    </StackPanel>
+                </StackPanel>
+            </ComboBoxItem>   
+
+
+            <ComboBoxItem Background="Gray"  IsSelected="True" FontFamily="Showcard Gothic">
+                <StackPanel Name="Manok" Orientation="Horizontal">
+                    <StackPanel Width="41">
+                        <Image Source="Resource/Coffee.png" Height="30"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="Manok"/>
+                    </StackPanel>
+                </StackPanel>
+            </ComboBoxItem>   
+
+
+
+
+        </ComboBox>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="136*"/>
+                <ColumnDefinition Width="166*"/>
+                <ColumnDefinition Width="188*"/>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="38*"/>
+                <ColumnDefinition Width="34*"/>
+                <ColumnDefinition Width="108*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="TextBox" Margin="81,-24,69,211" Grid.Column="1" Grid.ColumnSpan="2" />
+            <Button x:Name="AddButton" Click="AddButton_Click" Content="Add Button" Margin="123.118,-24,29,211" Grid.ColumnSpan="3" Grid.Column="2"/>
+            <Button x:Name="Remove" Margin="14,-24,29,211" Grid.ColumnSpan="3" Grid.Column="4" Content="Remove" Click="RemoveButton_CLick"/>
+        </Grid>
+
+    </StackPanel>
+</Window>
